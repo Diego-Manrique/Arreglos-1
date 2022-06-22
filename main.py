@@ -15,3 +15,61 @@ def fck (list):
 print (fck(list))
       
 print(list)
+
+#Elabore una aplicación que permita introducir 20 elementos de tipo entero en un arreglo, el programa mostrara impreso el arreglo en orden inverso.
+
+lista = []
+print("Digite Sus 20 Numeros")
+valores = 20
+valor1 = 0
+while valor1 < valores:
+    print("Llevas Digitado", (valor1 + 1), "Elemento")
+    enteros = int(input())
+    lista.append(enteros)
+    valor1 += 1
+lista.sort(reverse=True)
+print(("El Orden De Sus Elementos Esta De Mayor A Menor\n"), (lista))
+
+#3. Hacer un programa que lea diez valores enteros en un array y los muestre en pantalla. después que los ordene de menor a mayor y los vuelva a mostrar. y finalmente que los ordene de mayor a menor y los muestre por tercera vez.
+
+lista = []
+for i in range (10):
+  x = lista.append(int(input(
+"Digite un numero\n")))
+print(lista)
+lista.sort()
+print (lista)
+lista.sort(reverse=True)
+print(lista)
+
+#4. Elabore un programa que encuentre al número mayor y menor de un arreglo y luego muestre en qué posición se encontraban estos números originalmente.
+
+list = [34, 45, 2, 78, 6, 98,7, 0, 78, 65]
+
+for y in list:
+  mayor = max(list)
+  posicion_mayor = list.index(mayor)
+  menor = min(list)
+  posicion_menor = list.index(menor)
+  
+print(mayor)
+print(posicion_mayor)
+print(list)
+
+#5. elabore un programa que permita introducir un arreglo de 10 elementos, el programa mostrara un histograma de esos datos (el histograma se interpretara con la salida de n asteriscos donde n es el valor de cada elemento del arreglo) ej.: el arreglo es 2,3,4 el histograma será 2->** 3->*** 4->****
+
+list = []
+
+for asteriscos in range(10):
+  list.append(int(input("Digite un numero\n")))
+
+for x in list:
+  print(x,'->', x * "*" )
+
+#6. Elabore un programa que permita introducir un arreglo de 25 elementos de tipo entero. luego pedir al usuario que introduzca un número. el programa mostrara el número de veces que se repite dicho valor en el arreglo
+
+  list = []
+
+  valor = 25
+  valor =0
+
