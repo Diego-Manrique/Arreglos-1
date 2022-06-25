@@ -73,8 +73,16 @@ for x in list:
 lista = []
 
 for x in range (25):
-  num = lista.append(int(input("Digite su numero:  ")))
+  num = lista.append(int(input(f"Llevas Digitado {x + 1} Numeros: ")))
 
 rep = int(input("Digite el numero el cual quiera saber si esta repetido"))
 a = lista.count(rep)
 print(f"El arreglo digitados es: {lista}\nEl numero esta digitado: {a}")
+
+
+#Elabore un programa que permita introducir un arreglo de 8 elementos de tipo entero. El programa mostrara un arreglo en donde muestre un 1 para los primos y un 0 para los no primos.
+
+lista = []
+
+for x in range (8):
+  num = lista.append(int(input("Digite su numero:  ")))
