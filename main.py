@@ -88,12 +88,12 @@ par = []
 impar = []
 for a in range (8):
   num = lista.append(int(input(f"Llevas Digitado {a + 1} Numeros: ")))
-  
-if lista[a] % 2 == 0:
- par.append(lista[a])
-else:
-  impar.append(lista[a])
+for i in range(8):
+  if lista[i] % 2 == 0:
+   par.append(lista[i])
+  else:
+    impar.append(lista[i])
 impar.sort()
 par.sort()
 
-print(f"LLos Numeros digitados son: \n{lista}\nLos Numeros Impares Del Arreglo Son: \n{impar}\nLos Numeros Pares Del Arreglo Son: \n{par}")
+print(f"Los Numeros digitados son: \n{lista}\nLos  impares Del arreglo son: \n{impar}\nLos numeros pares del arreglo on: \n{par}")
