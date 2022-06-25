@@ -2,7 +2,7 @@
 
 import random
 list = []
-x = int(input("sedgsfghd\n"))
+x = int(input("numero:\n"))
 for uwu in range(x):
   list.append(random.randint(1,100))
 
@@ -42,7 +42,7 @@ print (lista)
 lista.sort(reverse=True)
 print(lista)
 
-#4. Elabore un programa que encuentre al número mayor y menor de un arreglo y luego muestre en qué posición se encontraban estos números originalmente.
+# Elabore un programa que encuentre al número mayor y menor de un arreglo y luego muestre en qué posición se encontraban estos números originalmente.
 
 list = [34, 45, 2, 78, 6, 98,7, 0, 78, 65]
 
@@ -56,7 +56,7 @@ print(mayor)
 print(posicion_mayor)
 print(list)
 
-#5. elabore un programa que permita introducir un arreglo de 10 elementos, el programa mostrara un histograma de esos datos (el histograma se interpretara con la salida de n asteriscos donde n es el valor de cada elemento del arreglo) ej.: el arreglo es 2,3,4 el histograma será 2->** 3->*** 4->****
+# elabore un programa que permita introducir un arreglo de 10 elementos, el programa mostrara un histograma de esos datos (el histograma se interpretara con la salida de n asteriscos donde n es el valor de cada elemento del arreglo) ej.: el arreglo es 2,3,4 el histograma será 2->** 3->*** 4->****
 
 list = []
 
@@ -66,10 +66,15 @@ for asteriscos in range(10):
 for x in list:
   print(x,'->', x * "*" )
 
-#6. Elabore un programa que permita introducir un arreglo de 25 elementos de tipo entero. luego pedir al usuario que introduzca un número. el programa mostrara el número de veces que se repite dicho valor en el arreglo
+# Elabore un programa que permita introducir un arreglo de 25 elementos de tipo entero. luego pedir al usuario que introduzca un número. el programa mostrara el número de veces que se repite dicho valor en el arreglo
 
-  list = []
 
-  valor = 25
-  valor =0
 
+lista = []
+
+for x in range (25):
+  num = lista.append(int(input("Digite su numero:  ")))
+
+rep = int(input("Digite el numero el cual quiera saber si esta repetido"))
+a = lista.count(rep)
+print(f"El arreglo digitados es: {lista}\nEl numero esta digitado: {a}")
