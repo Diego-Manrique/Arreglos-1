@@ -93,7 +93,5 @@ for i in range(8):
    par.append(lista[i])
   else:
     impar.append(lista[i])
-impar.sort()
-par.sort()
-
+impar.sort() , par.sort()
 print(f"Los Numeros digitados son: \n{lista}\nLos  impares Del arreglo son: \n{impar}\nLos numeros pares del arreglo on: \n{par}")
