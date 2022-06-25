@@ -84,5 +84,16 @@ print(f"El arreglo digitados es: {lista}\nEl numero esta digitado: {a}")
 
 lista = []
 
-for x in range (8):
-  num = lista.append(int(input("Digite su numero:  ")))
+par = []
+impar = []
+for a in range (8):
+  num = lista.append(int(input(f"Llevas Digitado {a + 1} Numeros: ")))
+  
+if lista[a] % 2 == 0:
+ par.append(lista[a])
+else:
+  impar.append(lista[a])
+impar.sort()
+par.sort()
+
+print(f"LLos Numeros digitados son: \n{lista}\nLos Numeros Impares Del Arreglo Son: \n{impar}\nLos Numeros Pares Del Arreglo Son: \n{par}")
